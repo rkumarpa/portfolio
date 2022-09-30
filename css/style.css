@@ -1,0 +1,648 @@
+body {
+  width: 100%;
+  margin: 0; }
+
+.background {
+  background-image: url("../images/exp1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.nav_wrapper {
+  display: none;
+  padding: 0;
+  z-index: 1000 !important; }
+  .nav_wrapper ul.topnav li {
+    display: none; }
+  .nav_wrapper ul.topnav li a {
+    display: inline;
+    width: 100%;
+    padding: 4px 20px 7px 20px;
+    font-size: 12pt;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: 0.3s; }
+  .nav_wrapper ul.topnav li.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/menu.png");
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    position: relative; }
+  .nav_wrapper .button:hover {
+    background-color: unset !important;
+    text-decoration: none; }
+  .nav_wrapper ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+  .nav_wrapper ul.topnav.responsive li a {
+    display: block; }
+  .nav_wrapper ul.topnav.responsive li a:hover {
+    color: #00aeef;
+    background-color: #333; }
+  .nav_wrapper ul .navor {
+    background-color: #73757d;
+    border-radius: 10px; }
+
+.baricon {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 42px;
+  margin-top: 5px; }
+  .baricon .bar1, .baricon .bar2, .baricon .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px); }
+.change .bar2 {
+  opacity: 0; }
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+.navigation {
+  background-color: #4b4c4f;
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+  opacity: 0.9;
+  box-shadow: 0px 3px 5px 0px black;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9; }
+  .navigation img {
+    margin: 5px 0 5px 15px;
+    height: 3em;
+    width: 3em;
+    flex: initial; }
+  .navigation .desknav {
+    display: flex;
+    color: #73757d;
+    list-style-type: none;
+    flex: auto;
+    justify-content: center;
+    padding: 0; }
+    .navigation .desknav li {
+      padding: 0 16px; }
+      .navigation .desknav li a {
+        color: unset;
+        text-decoration: none; }
+      .navigation .desknav li a:hover {
+        color: #00aeef; }
+
+.frontPage {
+  height: 50%;
+  background: rgba(75, 76, 79, 0.9);
+  text-align: center; }
+  .frontPage .name {
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    padding-top: 8%; }
+    .frontPage .name p {
+      margin: 0; }
+  .frontPage .pic {
+    padding-top: 5%; }
+    .frontPage .pic img {
+      text-align: center;
+      width: 250px;
+      background-color: white;
+      border-color: white;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #dde0e0; }
+
+.background2 {
+  background-image: url("../images/exp6.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+.background3 {
+  background-image: url("../images/exp.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 750px; } }
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.aboutMe {
+  font-size: 20px;
+  color: #00aeef;
+  height: 50%;
+  background: rgba(75, 76, 79, 0.9);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  align-items: center; }
+  .aboutMe .radiostatus {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -35px;
+    box-sizing: border-box; }
+    .aboutMe .radiostatus .status {
+      margin: auto;
+      height: 20px;
+      width: 20px;
+      background-color: #00aeef;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+      background-position: center center;
+      box-sizing: inherit;
+      border-style: solid; }
+    .aboutMe .radiostatus .status:hover {
+      background-color: #40c754; }
+    .aboutMe .radiostatus .statusGreen {
+      background-color: #40c754;
+      border: unset; }
+  .aboutMe .container {
+    display: flex; }
+    .aboutMe .container .swipeleft {
+      flex: 1;
+      margin-top: 4%;
+      cursor: pointer;
+      opacity: 0.6; }
+      .aboutMe .container .swipeleft img {
+        height: 80%; }
+    .aboutMe .container .swipeleft:hover {
+      opacity: 1; }
+    .aboutMe .container .swiperight:hover {
+      opacity: 1; }
+    .aboutMe .container .swiperight {
+      flex: 1;
+      margin-top: 4%;
+      opacity: 0.6;
+      cursor: pointer; }
+      .aboutMe .container .swiperight img {
+        height: 80%; }
+    .aboutMe .container .swipedata {
+      flex: 10;
+      margin: auto;
+      margin-right: 3%; }
+      .aboutMe .container .swipedata .mySlides .heading {
+        font-family: "Titillium Web", sans-serif;
+        color: #00aeef;
+        font-size: 24px; }
+      .aboutMe .container .swipedata .mySlides p {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bolder;
+        line-height: 2; }
+  .aboutMe .education {
+    display: flex;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: white; }
+    .aboutMe .education .edu {
+      flex: 1;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #dde0e0;
+      background-color: #73757d;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .aboutMe .education .edu h4, .aboutMe .education .edu h5, .aboutMe .education .edu h6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bolder; }
+      .aboutMe .education .edu img {
+        width: 100px;
+        border-radius: 20px;
+        margin-top: 5px; }
+
+.animat_top {
+  position: relative;
+  animation: animatetop 1s; }
+
+@keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+.animat_right {
+  position: relative;
+  animation: animateright 1s; }
+
+@keyframes animateright {
+  from {
+    right: -10%;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+.animat_Left {
+  position: relative;
+  animation: animateleft 1s; }
+
+@keyframes animateleft {
+  from {
+    left: -10%;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+.animat_fading {
+  /* animation:fading 10s 1}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0} */
+  animation: opac 2s; }
+
+@keyframes opac {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.skills {
+  margin-top: 10%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  color: #00aeef;
+  background: rgba(75, 76, 79, 0.9);
+  padding: 20px 0; }
+  .skills .skillbox {
+    display: flex;
+    flex-wrap: wrap; }
+    .skills .skillbox .box {
+      width: 300px;
+      height: 120px;
+      background-color: #73757d;
+      margin: auto;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bolder;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #dde0e0;
+      display: flex; }
+      .skills .skillbox .box img {
+        width: 100px; }
+
+.projects {
+  margin-top: 10%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  color: #00aeef;
+  background: rgba(75, 76, 79, 0.9);
+  padding: 20px 0; }
+  .projects .container .radiostatus {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -35px;
+    box-sizing: border-box;
+    z-index: 9; }
+    .projects .container .radiostatus .status1,
+    .projects .container .radiostatus .statusM {
+      margin: auto;
+      height: 20px;
+      width: 20px;
+      background-color: #00aeef;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+      background-position: center center;
+      box-sizing: inherit;
+      border-style: solid; }
+    .projects .container .radiostatus .status1:hover,
+    .projects .container .radiostatus .statusM:hover {
+      background-color: #40c754; }
+    .projects .container .radiostatus .statusGreen {
+      background-color: #40c754;
+      border: unset; }
+  .projects .container .carcontainer {
+    display: flex; }
+    .projects .container .carcontainer .swipeleft {
+      margin: auto;
+      cursor: pointer;
+      opacity: 0.6; }
+      .projects .container .carcontainer .swipeleft img {
+        height: 50%; }
+    .projects .container .carcontainer .swipeleft:hover {
+      opacity: 1; }
+    .projects .container .carcontainer .swiperight:hover {
+      opacity: 1; }
+    .projects .container .carcontainer .swiperight {
+      margin: auto;
+      opacity: 0.6;
+      cursor: pointer; }
+      .projects .container .carcontainer .swiperight img {
+        height: 50%; }
+    .projects .container .carcontainer .swipedata {
+      margin: auto; }
+      .projects .container .carcontainer .swipedata .mySlides1, .projects .container .carcontainer .swipedata .mySlidesM {
+        display: flex; }
+        .projects .container .carcontainer .swipedata .mySlides1 .heading, .projects .container .carcontainer .swipedata .mySlidesM .heading {
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: bolder;
+          flex: auto;
+          text-align: center;
+          margin-bottom: 0;
+          margin-top: 30px; }
+        .projects .container .carcontainer .swipedata .mySlides1 p, .projects .container .carcontainer .swipedata .mySlidesM p {
+          color: white;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          width: 70%; }
+        .projects .container .carcontainer .swipedata .mySlides1 .projbox, .projects .container .carcontainer .swipedata .mySlidesM .projbox {
+          height: 300px;
+          width: 400px;
+          background-color: #73757d;
+          margin: auto 10px;
+          display: flex;
+          flex-flow: wrap;
+          border-radius: 5px;
+          box-shadow: 0 0 10px #dde0e0; }
+          .projects .container .carcontainer .swipedata .mySlides1 .projbox .projdetails, .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails {
+            margin: 0 10px;
+            display: flex;
+            max-height: 200px; }
+            .projects .container .carcontainer .swipedata .mySlides1 .projbox .projdetails img, .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails img {
+              width: 30%; }
+            .projects .container .carcontainer .swipedata .mySlides1 .projbox .projdetails p, .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails p {
+              margin: 0 10px;
+              line-height: 2; }
+              .projects .container .carcontainer .swipedata .mySlides1 .projbox .projdetails p a, .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails p a {
+                color: #00aeef;
+                font-weight: bolder; }
+  .projects .container .swipemobile {
+    flex-direction: column; }
+
+.footer {
+  display: flex;
+  text-align: center;
+  flex-flow: wrap; }
+  .footer .quickId {
+    margin-top: 10%;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 24px;
+    width: 50%;
+    background-color: #212224;
+    padding: 20px 0; }
+    .footer .quickId .heading {
+      color: #00aeef; }
+    .footer .quickId table {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      width: 70%;
+      margin: auto;
+      line-height: 3; }
+      @media screen and (max-width: 1024px) {
+        .footer .quickId table {
+          line-height: 2; } }
+      .footer .quickId table th {
+        text-align: left; }
+      .footer .quickId table td {
+        padding-left: 20px; }
+    .footer .quickId .icons {
+      margin: 20px auto;
+      width: 60%; }
+      .footer .quickId .icons img {
+        margin: 10px;
+        width: 35px;
+        height: 32px; }
+  .footer .contactMe {
+    margin-top: 10%;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 24px;
+    color: #00aeef;
+    width: 50%;
+    background: #73757d;
+    padding: 20px 0; }
+    .footer .contactMe form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px; }
+      .footer .contactMe form .first {
+        display: flex; }
+        .footer .contactMe form .first input {
+          flex: 1; }
+        .footer .contactMe form .first :first-child {
+          margin-right: 15px; }
+      .footer .contactMe form input {
+        border: none;
+        border-bottom: 2px solid black;
+        color: #212224;
+        transition: 0.5s ease all;
+        background-color: transparent;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: bolder; }
+      .footer .contactMe form input::-webkit-input-placeholder {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bolder;
+        font-size: 16px; }
+      .footer .contactMe form .send {
+        border: none;
+        border-top: 2px solid black;
+        color: #212224;
+        transition: 0.5s ease all;
+        background-color: transparent;
+        color: #00aeef;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: bolder;
+        font-size: 20px; }
+      .footer .contactMe form .message {
+        min-height: 128px;
+        border: none; }
+
+#swipemobile {
+  display: none; }
+
+@media screen and (max-width: 350px) {
+  .skills .skillbox .box {
+    width: 140px !important; } }
+@media screen and (max-width: 450px) {
+  .frontPage .name p {
+    margin: 40 0; }
+  .frontPage .pic {
+    padding-top: 20px; }
+
+  .aboutMe {
+    font-size: 16px; }
+
+  .projects .container .carcontainer .swipedata .mySlidesM .projbox .heading {
+    margin: auto; }
+  .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails {
+    display: block; }
+    .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails img {
+      float: left;
+      margin-right: 10px; }
+    .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails p {
+      width: 100%; } }
+@media screen and (max-width: 470px) {
+  .skills .skillbox .box {
+    width: 150px !important;
+    font-size: 16px; } }
+@media screen and (max-width: 500px) {
+  .aboutMe {
+    height: unset !important; }
+    .aboutMe .education {
+      display: block; }
+      .aboutMe .education .edu img {
+        width: 70px;
+        border-radius: 10px; } }
+@media screen and (max-width: 650px) {
+  .navigation {
+    height: 55px; }
+    .navigation .desknav {
+      display: none; }
+
+  .nav_wrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: column; }
+
+  .aboutMe {
+    height: unset; }
+    .aboutMe .container .swipeleft img, .aboutMe .container .swiperight img {
+      height: 25% !important; }
+
+  .skills {
+    height: unset; }
+    .skills .skillbox {
+      margin: 10px; }
+      .skills .skillbox .box {
+        height: 90px; }
+
+  .footer {
+    flex-flow: column-reverse; }
+    .footer .contactMe {
+      width: auto; }
+    .footer .quickId {
+      width: auto;
+      margin-top: 0; } }
+@media screen and (max-width: 767px) {
+  #swipedesktop {
+    display: none !important; }
+
+  #swipemobile {
+    display: flex;
+    flex-direction: column; }
+
+  .aboutMe {
+    text-align: center; }
+    .aboutMe .container {
+      width: 100%;
+      margin: auto; }
+      .aboutMe .container .swipedata {
+        margin: auto; }
+        .aboutMe .container .swipedata .mySlides .heading {
+          margin-top: 0;
+          margin-bottom: 10px; }
+      .aboutMe .container .swipeleft, .aboutMe .container .swiperight {
+        margin: auto; }
+        .aboutMe .container .swipeleft img, .aboutMe .container .swiperight img {
+          height: 50%; }
+
+  .projects {
+    height: unset; }
+    .projects .container .carcontainer .swipedata {
+      margin-left: 2%; }
+      .projects .container .carcontainer .swipedata .mySlidesM .projbox {
+        width: initial !important; }
+        .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails {
+          flex: auto; }
+          .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails img {
+            object-fit: contain; }
+          .projects .container .carcontainer .swipedata .mySlidesM .projbox .projdetails p {
+            margin-left: 10px;
+            font-size: 14px;
+            margin: auto 10px; }
+    .projects .container .carcontainer .swipedata {
+      margin: auto; }
+    .projects .container .carcontainer .swipeleft, .projects .container .carcontainer .swiperight {
+      margin: auto; }
+      .projects .container .carcontainer .swipeleft img, .projects .container .carcontainer .swiperight img {
+        height: 25%; }
+    .projects .container .radiostatus {
+      margin-top: -10px; } }
+@media screen and (max-width: 900px) {
+  .footer .contactMe form {
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0; }
+    .footer .contactMe form .first {
+      flex-direction: column; }
+      .footer .contactMe form .first :first-child {
+        margin: 10px 0; }
+    .footer .contactMe form .message {
+      min-height: 90px; }
+  .footer .quickId table {
+    font-size: 16px; } }
+@media screen and (max-width: 992px) {
+  .projbox {
+    width: 300px !important; }
+
+  .skills .skillbox .box {
+    width: 215px; }
+
+  .projects .container .carcontainer .swipedata .mySlides1 p, .projects .container .carcontainer .swipedata .mySlidesM p {
+    font-size: 12px; }
+
+  .footer .contactMe form {
+    padding: 0 40px; }
+
+  .education .edu {
+    flex: 1; }
+    .education .edu h4 {
+      font-size: 16px; }
+    .education .edu h5 {
+      font-size: 14px; }
+    .education .edu h6 {
+      font-size: 12px; } }
+@media screen and (min-width: 768px) {
+  .skills {
+    padding-bottom: 2em; }
+    .skills .container {
+      padding-top: 1em; }
+
+  .projects {
+    padding-top: 2em; } }
+
+/*# sourceMappingURL=style.css.map */

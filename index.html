@@ -1,0 +1,376 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function myFunction(e) {
+            var x = document.getElementById("myTopnav");
+            var y = document.getElementById("bariconid");
+
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // e.classList.toggle("change");
+                y.className += " change";
+
+            } else {
+                x.className = "topnav";
+                // e.classList.toggle("change");
+                y.className = "baricon";
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+
+        <header class="navigation">
+            <img src="images/logo.png" alt="">
+            <ul class="desknav">
+                <li><a href="#Home" onclick="currentDiv(1)">HOME</a></li>
+                <li><a href="#Details" onclick="currentDiv(2)">EDUCATION</a></li>
+                <li><a href="#Details" onclick="currentDiv(3)">EXPERIENCE</a></li>
+                <li><a href="#Skills" style="cursor:pointer;">SKILLS</a></li>
+                <li><a href="#Projects">PROJECTS</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+            <div class="nav_wrapper">
+                <div class="baricon" id="bariconid" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="topnav" id="myTopnav">
+                    <nav class="navor animat_fading">
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Home" onclick="currentDiv(1)">HOME</a></li>
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Details" onclick="currentDiv(2)">EDUCATION</a></li>
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Details" onclick="currentDiv(3)">EXPERIENCE</a></li>
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Skills" style="cursor:pointer;">SKILLS</a></li>
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Projects">PROJECTS</a></li>
+                        <li class=" animat_top" onclick="myFunction(this)"><a href="#Contact">CONTACT</a></li>
+                    </nav>
+                </ul>
+            </div>
+        </header>
+
+        <div class="background">
+
+            <div class="frontPage" id="Home">
+                <div class="name">
+                    <p>Rakesh Parappa</p>
+                </div>
+                <div class="pic"><img src="images/rocky.png" alt=""></div>
+            </div>
+        </div>
+        <div class="background2">
+            <div class="aboutMe">
+                <div class="radiostatus" id="Details">
+                    <span class="status" onclick="currentDiv(1)"></span>
+                    <span class="status" onclick="currentDiv(2)"></span>
+                    <span class="status" onclick="currentDiv(3)"></span>
+                </div>
+                <div class="container">
+                    <div class="swipeleft">
+                        <img onclick="plusDivs(-1)" src="images/tall_arrow_left.png">
+                        <!-- <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i> -->
+                    </div>
+                    <div class="swipedata">
+                        <div class="mySlides" id="aboutMe">
+                            <p class="heading titles">ABOUT ME</p>
+                            <p>Accomplished 5 years as Software Engineer with distinguished performance in Information Technology.
+                                My interest lies in the fields of Artificial Intelligence and machine learning and want to
+                                grow my career in this compelling field.</p>
+                        </div>
+                        <div class="mySlides" id="Education">
+                            <p class="heading titles">EDUCATION</p>
+                            <div class="education">
+                                <div class="edu">
+                                    <img src="images/pace.jpg">
+                                    <h4>Pace University</h4>
+                                    <h5>Master of Science (MS) <br> Computer Science</h5>
+                                </div>
+                                <div class="edu">
+                                    <img src="images/SMU.png">
+
+                                    <h4>Sikkim Manipal University</h4>
+                                    <h5>Master of Business Administrator (MBA) <br> Information Systems</h5>
+                                </div>
+                                <div class="edu">
+                                    <img src="images/reva.jpg">
+
+                                    <h4>Reva Institute of Technology Bangalore</h4>
+                                    <h5>Bachelors of Engineering (BE) <br> Computer Science</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides" id="Experience">
+                            <p class="heading titles">EXPERIENCE</p>
+                            <div class="education">
+                                <div class="edu">
+                                    <img src="images/q.jpeg">
+                                    <h4>Quantilus</h4>
+                                    <h5>Software Engineer</h5>
+                                    <h6><b>New York, USA</b><br>June 2016 - Present</h6>
+                                </div>
+                                <div class="edu">
+                                    <img src="images/cognizant.png">
+                                    <h4>Cognizant</h4>
+                                    <h5>Associate</h5>
+                                    <h6><b>Bangalore, India</b><br>April 2016 - July 2016</h6>
+
+                                </div>
+                                <div class="edu">
+                                    <img src="images/mphasis.jpg">
+                                    <h4>Mphasis an HP company</h4>
+                                    <h5>Senior Software Engineer</h5>
+                                    <h6><b>Bangalore, India</b><br>July 2011 - April 2016</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperight">
+                        <img onclick="plusDivs(+1)" src="images/tall_arrow_right.png">
+                        <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="skills" id="Skills">
+                <div class="container">
+                    <p class="titles" style="margin:10px;">SKILLS</p>
+                    <div class="skillbox">
+                        <div class="box">
+                            <!-- <img src="images/hcj.jpg"> -->
+                            <p>HTML/CSS/SCSS</p>
+                        </div>
+                        <div class="box">
+                            <!-- <img src="images/java.png"> -->
+                            <p>Java</p>
+                        </div>
+                        <div class="box">
+                            <!-- <img src="images/R.png"> -->
+                            <p>Javascript</p>
+                        </div>
+                        <div class="box">
+                            <!-- <img src="images/hadoop.png"> -->
+                            <p>SQL & Hadoop</p>
+                        </div>
+                        <div class="box">
+                            <!-- <img src="images/PowerBi.jpg"> -->
+                            <p>R & PowerBi</p>
+                        </div>
+                        <div class="box">
+                            <!-- <img src="images/hippo.png"> -->
+                            <p>Hippo CMS</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="background3" id="Projects">
+                <div class="projects">
+                    <div class="container">
+                        <p class="titles" style="margin:10px;">PROJECTS</p>
+                        <div id="swipedesktop">
+                            <div class="radiostatus">
+                                <span class="status1" onclick="currentDiv1(1)"></span>
+                                <span class="status1" onclick="currentDiv1(2)"></span>
+                            </div>
+                            <div class="carcontainer">
+                                <div class="swipeleft">
+                                    <img onclick="plusDivs1(-1)" src="images/tall_arrow_left.png">
+                                </div>
+                                <!-- Carousel for Desktop -->
+                                <div class="swipedata">
+                                    <div class="mySlides1 animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Analyzing Property Price</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/ProjectWeka.PNG" alt="">
+
+                                                <p>Analyzed the property price data to predict a model using WEKA. Tested the
+                                                    data using models like linear regression, KNN, and simple K-means clustering.
+                                                    <a href="U01382090_Rakesh_Property Report.pdf" target="_blank">VIEW REPORT</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="projbox">
+                                            <p class="heading">Movie Success Prediction</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/ProjectR.PNG" alt="">
+
+                                                <p>Analyzed movie data and developed a model in R using linear regression to
+                                                    predict the gross of the movie and used classification models like logistic,
+                                                    decision tree, and random forest to compare the accuracy of movie success.
+                                                    <a href="U01382090_Rakesh_Movie Report.pdf" target="_blank">VIEW REPORT</a></p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="mySlides1 animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Restaurant Inspection result prediction</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/rest.jpg" alt="">
+
+                                                <p>Analyzed restaurant data to develop a model in R using decision trees and
+                                                    logistic regression models to help the health inspector to predict the
+                                                    criticality of the offense based on the training data. <a href="" target="_blank">VIEW REPORT</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="projbox">
+                                            <p class="heading">Music Store Website</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/Mstore.PNG" alt="">
+
+                                                <p>Developed a web-based application for a music store using chinook database
+                                                    with functionalities like search music, generate an invoice, add and
+                                                    update store employee and an admin page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiperight">
+                                    <img onclick="plusDivs1(+1)" src="images/tall_arrow_right.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="swipemobile">
+
+                            <div class="carcontainer">
+                                <div class="swipeleft">
+                                    <img onclick="plusDivsM(-1)" src="images/tall_arrow_left.png">
+                                </div>
+                                <!-- Carousel for Mobile -->
+                                <div class="swipedata">
+                                    <div class="mySlidesM animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Analyzing Property Price</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/ProjectWeka.PNG" alt="">
+                                                <p>Analyzed the property price data to predict a model using WEKA. Tested the
+                                                    data using models like linear regression, KNN, and simple K-means.
+                                                    <a href="U01382090_Rakesh_Property Report.pdf" target="_blank">VIEW REPORT</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mySlidesM animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Movie Success Prediction</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/ProjectR.PNG" alt="">
+
+                                                <p>Analyzed movie data and developed a model in R using linear regression to
+                                                    predict the gross of the movie and used classification models like logistic,
+                                                    decision tree, and random forest to compare the accuracy of movie success.
+                                                    <a href="U01382090_Rakesh_Movie Report.pdf" target="_blank">VIEW REPORT</a></p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="mySlidesM animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Restaurant Inspection result prediction</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/rest.jpg" alt="">
+                                                <p>Analyzed restaurant data to develop a model in R using decision trees and
+                                                    logistic regression models to help the health inspector to predict the
+                                                    criticality of the offense based on the training data. <a href="" target="_blank">VIEW REPORT</a></p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="mySlidesM animat_fading">
+                                        <div class="projbox">
+                                            <p class="heading">Music Store Website</p>
+
+                                            <div class="projdetails">
+                                                <img src="images/Mstore.PNG" alt="">
+
+                                                <p>Developed a web-based application for a music store using chinook database
+                                                    with functionalities like search music, generate an invoice, add and
+                                                    update store employee and an admin page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiperight">
+                                    <img onclick="plusDivsM(+1)" src="images/tall_arrow_right.png">
+                                </div>
+                            </div>
+                            <div class="radiostatus">
+                                <span class="statusM" onclick="currentDivM(1)"></span>
+                                <span class="statusM" onclick="currentDivM(2)"></span>
+                                <span class="statusM" onclick="currentDivM(3)"></span>
+                                <span class="statusM" onclick="currentDivM(4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer" id="Contact">
+                    <div class="quickId">
+                        <p class="heading">QUICK ID</p>
+                        <table>
+                            <tr>
+                                <th>Phone</th>
+                                <td>: 551-229-5901</td>
+                            </tr>
+                            <tr>
+                                <th valign="top">Email</th>
+                                <td>: rakesh.p0130@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th valign="top">Address</th>
+                                <td>: #1, One Pace Plaza, Newyork, NY 1234</td>
+                            </tr>
+                        </table>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/rakesh-p0130/" target="_blank"><img src="images/linked.PNG" alt=""></a>
+                            <a href="https://github.com/Rakesh3001" target="_blank"><img src="images/git.PNG" alt=""></a>
+                            <a href="Rakesh Parappa.pdf" target="_blank"><img src="images/download.PNG" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="contactMe">
+                        <p>CONTACT ME</p>
+                        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                        <!-- <form> -->
+                            <div class="first">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="mail" placeholder="Email">
+                            </div>
+
+                            <input type="text" name="subject" placeholder="Subject" style="min-height:60px;">
+                            <input class="message" type="text" name="comment" size="50" placeholder="Message">
+                            <button class="send" type="submit" style="cursor:pointer;">Send</button>
+                        </form>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+</body>
+<script src='js/slideshow.js'></script>
+
+
+</html>
